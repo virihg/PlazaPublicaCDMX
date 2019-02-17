@@ -17,7 +17,7 @@ gem "faker", "~> 1.9"
 gem 'rake','12.3.1'
 
 gem "figaro"
-
+gem 'decidim-consultations'
 group :development, :test do
   gem "byebug", "~> 10.0", platform: :mri
 
