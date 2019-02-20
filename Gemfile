@@ -18,6 +18,10 @@ gem 'rake','12.3.1'
 
 gem "figaro"
 gem 'decidim-consultations'
+gem 'decidim-initiatives'
+
+gem 'whenever', require: false
+
 group :development, :test do
   gem "byebug", "~> 10.0", platform: :mri
 
