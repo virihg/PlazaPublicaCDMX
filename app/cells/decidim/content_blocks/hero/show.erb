@@ -1,0 +1,48 @@
+
+<section class="extended hero home-section" style="background-image:url(<%= background_image %>);">
+  <div class="hero__container">
+    <div class="row">
+      <div class="columns small-centered text-left large-10">
+        <h1 class="text-highlight font-weight-bold">
+          <% if translated_welcome_text.blank? %>
+            <%= t("decidim.pages.home.hero.welcome", organization: current_organization.name) %>
+          <% else %>
+            <%= decidim_sanitize translated_welcome_text %>
+          <% end %>
+        </h1>
+        <h3 class="text-highlight">Plaza Pública es la plataforma de participación de la Ciudad de México donde la ciudadanía puede proponer, debatir y votar para decidir proyectos y disposiciones que afectan nuestra vida en la ciudad.</h3>
+        <br>
+        <div class="row">
+          <div class="col">
+            <div class="card" style="background: rgba(255, 255, 255, 0.7);">
+              <div class="card-body">
+                <h5 class="card-title font-weight-bold text-left">Asambleas</h5>
+                <p class="card-text">Involúcrate en un grupo de decisión temático o de tu barrio.</p>
+                <%= link_to "Ir a Asambleas", "/assemblies", class: "btn btn-primary" %>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="background: rgba(255, 255, 255, 0.7);">
+              <div class="card-body">
+                <h5 class="card-title font-weight-bold text-left">Consultas</h5>
+                <p class="card-text">Vota en los temas puestos a consulta por parte de gobierno.</p>
+                <%= link_to "Ir a Consultas", "/consultations", class: "btn btn-primary" %>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card" style="background: rgba(255, 255, 255, 0.7);">
+              <div class="card-body">
+                <h5 class="card-title font-weight-bold text-left">Iniciativa</h5>
+                <p class="card-text">Pronto podrás crear propuestas y firmas para mejorar la ciudad.</p>
+                <%= link_to "Ir a Iniciativas", "/initiatives", class: "btn btn-primary" %>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
