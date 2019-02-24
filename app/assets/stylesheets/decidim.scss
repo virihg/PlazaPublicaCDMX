@@ -14,12 +14,23 @@ $secondary: #2CC4CF;
 // $twitter: #55acee;
 // $facebook: #3b5998;
 // $google: #dd4b39;
+@font-face {
+  font-family: Metropolis;
+  src: url('https://www.adip.cdmx.gob.mx/storage/app/media/Rally/metropolis/Metropolis-Regular.otf');
+}
+
+@font-face {
+  font-family: Metropolis_Bold;
+  src: url('https://www.adip.cdmx.gob.mx/storage/app/media/Rally/metropolis/Metropolis-Bold.otf');
+}
+
 
 @import "decidim/application";
 
 
 * {
   box-sizing: border-box;
+  font-family: 'Metropolis', 'Helvetica Neue', sans-serif !important;
 }
 
 [class*="cole-"] {
@@ -144,6 +155,11 @@ $secondary: #2CC4CF;
       flex: 0 0 33.333333%;
       max-width: 33.333333%;
   }
+  .cole-md-8 {
+      -ms-flex: 0 0 66.666666%;
+      flex: 0 0 66.666666%;
+      max-width: 66.666666%;
+  }
 }
 
 @media (max-width: 576px){
@@ -155,9 +171,9 @@ $secondary: #2CC4CF;
 }
 
 .btn-primary {
-  color: #fff;
-  background-color: #007bff;
-  border-color: #007bff;
+  color: #fff !important;
+  background-color: #007bff !important;
+  border-color: #007bff !important;
 }
 
 .font-weight-bold {
@@ -170,4 +186,32 @@ $secondary: #2CC4CF;
 
 h5 {
     font-size: 1.25rem;
+}
+
+
+.processes-home-section {
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  background-color: white !important;
+}
+
+.processes-heading {
+  color: #282828;
+}
+
+.processes-heading-box {
+  margin-bottom: 2rem;
+}
+
+.bg-gray {
+  background-color: #F5F5F5;
+  box-shadow: 2px 5px 15px #D3D3D3;
+}
+
+.card__image-top {
+  height: 12rem !important;
+}
+
+.text-align-right {
+  text-align: right !important;
 }
