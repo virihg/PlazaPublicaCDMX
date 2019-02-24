@@ -10,6 +10,8 @@ es:
               max_results: Cantidad máxima de elementos para mostrar
       pages:
         home:
+          highlighted_processes:
+            active_processes_explanation: Consulta los procesos de participación abiertos en estos momentos. Un proceso contiene varias etapas en las que puedes involucrarte.
           past_processes:
             past_processes: Procesos terminados
             last_step: Último paso

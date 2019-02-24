@@ -41,6 +41,8 @@ en:
             max_results: Maximum amount of elements to show
       pages:
         home:
+          highlighted_processes:
+            active_processes_explanation: Explore the current active processes. A process can have many different stages in which you can participate.
           past_processes:
             past_processes: Past processes
             last_step: Last step
