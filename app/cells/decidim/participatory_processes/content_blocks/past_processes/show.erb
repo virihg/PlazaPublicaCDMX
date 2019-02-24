@@ -1,12 +1,14 @@
-<section class="wrapper-home home-section">
+<section class="wrapper-home home-section processes-home-section">
   <div class="row" id="highlighted-processes">
-    <h3 class="section-heading"><%= t("past_processes", scope: i18n_scope) %></h3>
+    <div class="processes-heading-box">
+      <h3 class="processes-heading font-weight-bold"><%= t("past_processes", scope: i18n_scope) %></h3>
+    </div>
     <div class="row collapse">
       <div class="row small-up-1 smallmedium-up-2 mediumlarge-up-3
         large-up-4 card-grid">
         <% past_processes.each do |process| %>
           <div class="column">
-            <article class="card card--process card--mini">
+            <article class="card card--process card--mini bg-gray">
               <%= link_to decidim_participatory_processes.participatory_process_path(process), class: "card__link" do %>
                 <div class="card__image-top"
                   style="background-image:url(<%= process.hero_image.url %>)"></div>
