@@ -30,4 +30,20 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  decidim:
+    participatory_processes:
+      content_blocks:
+        past_processes:
+          name: Past processes
+      admin:
+        content_blocks:
+          past_processes:
+            max_results: Maximum amount of elements to show
+      pages:
+        home:
+          past_processes:
+            past_processes: Past processes
+            last_step: Last step
+            more_information: More information
+            participate: Participate
+            see_all_processes: See all processes
