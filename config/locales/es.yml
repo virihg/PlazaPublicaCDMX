@@ -1,0 +1,18 @@
+es:
+  decidim:
+    participatory_processes:
+      content_blocks:
+        past_processes:
+          name: Procesos terminados
+        admin:
+          content_blocks:
+            past_processes:
+              max_results: Cantidad máxima de elementos para mostrar
+      pages:
+        home:
+          past_processes:
+            past_processes: Procesos terminados
+            last_step: Último paso
+            more_information: Más información
+            participate: Participar
+            see_all_processes: Ver todos los procesos
