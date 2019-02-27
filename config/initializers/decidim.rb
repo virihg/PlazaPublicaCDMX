@@ -77,5 +77,15 @@ Decidim.configure do |config|
   # }
 end
 
+Decidim.content_blocks.register(:homepage, :past_processes) do |content_block|
+  content_block.cell = "decidim/participatory_processes/content_blocks/past_processes"
+  content_block.public_name_key = "decidim.participatory_processes.content_blocks.past_processes.name"
+  content_block.settings_form_cell = "decidim/participatory_processes/content_blocks/past_processes_settings_form"
+
+   content_block.settings do |settings|
+    settings.attribute :max_results, type: :integer, default: 4
+  end
+end
+
 Rails.application.config.i18n.available_locales = Decidim.available_locales
 Rails.application.config.i18n.default_locale = Decidim.default_locale
