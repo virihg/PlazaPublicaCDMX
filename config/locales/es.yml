@@ -4,10 +4,10 @@ es:
       content_blocks:
         past_processes:
           name: Procesos terminados
-        admin:
-          content_blocks:
-            past_processes:
-              max_results: Cantidad máxima de elementos para mostrar
+      admin:
+        content_blocks:
+          past_processes:
+            max_results: Cantidad máxima de elementos para mostrar
       pages:
         home:
           highlighted_processes:
