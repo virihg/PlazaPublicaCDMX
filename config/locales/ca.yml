@@ -1,0 +1,20 @@
+ca:
+  decidim:
+    participatory_processes:
+      content_blocks:
+        past_processes:
+          name: Processos acabats
+      admin:
+        content_blocks:
+          past_processes:
+            max_results: Quantitat màxima d'elements que es mostraran
+      pages:
+        home:
+          highlighted_processes:
+            active_processes_explanation: Consulta los procesos de participación abiertos en estos momentos. Un proceso contiene varias etapas en las que puedes involucrarte.
+          past_processes:
+            past_processes: Processos acabats
+            active_step: Últim actiu
+            more_information: Més informació
+            participate: Participa
+            see_all_processes: Veure tots els processos
