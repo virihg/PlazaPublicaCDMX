@@ -215,3 +215,7 @@ h5 {
 .text-align-right {
   text-align: right !important;
 }
+
+.hero::after {
+  background-color: transparent;
+}
