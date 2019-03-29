@@ -703,6 +703,10 @@ GEM
     truncato (0.7.11)
       htmlentities (~> 4.3.1)
       nokogiri (>= 1.7.0, <= 2.0)
+    twilio-ruby (5.21.2)
+      faraday (~> 0.9)
+      jwt (>= 1.5, <= 2.5)
+      nokogiri (>= 1.6, < 2.0)
     tzinfo (1.2.5)
       thread_safe (~> 0.1)
     uber (0.1.0)
@@ -751,6 +755,7 @@ DEPENDENCIES
   byebug (~> 10.0)
   daemons
   decidim (= 0.16.0)
+  decidim-api
   decidim-consultations
   decidim-dev (= 0.16.0)
   decidim-initiatives
@@ -764,12 +769,13 @@ DEPENDENCIES
   rake (= 12.3.1)
   spring (~> 2.0)
   spring-watcher-listen (~> 2.0)
+  twilio-ruby
   uglifier (~> 4.1)
   web-console (~> 3.5)
   whenever
 
 RUBY VERSION
-   ruby 2.5.1p57
+   ruby 2.4.5p335
 
 BUNDLED WITH
-   1.17.3
+   2.0.1
