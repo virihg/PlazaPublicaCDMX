@@ -15,6 +15,7 @@ gem "faker", "~> 1.9"
 gem 'rake','12.3.1'
 
 gem "figaro"
+gem 'twilio-ruby'
 gem 'decidim-consultations'
 gem 'decidim-initiatives'
 gem 'decidim-api'
