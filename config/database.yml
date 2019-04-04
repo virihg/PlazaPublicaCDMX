@@ -22,10 +22,10 @@ default: &default
   # For details on connection pooling, see rails configuration guide
   # http://guides.rubyonrails.org/configuring.html#database-pooling
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  host: <%= ENV.fetch("DATABASE_HOST") { "10.250.108.63" } %>
+  host: <%= ENV.fetch("DATABASE_HOST") { "localhost" } %>
   port: <%= ENV.fetch("DATABASE_PORT") { "5432" } %>
-  username: <%= ENV.fetch("DATABASE_USERNAME") { "decidim_app" } %>
-  password: <%= ENV.fetch("DATABASE_PASSWORD") { "d3c1d1m_28012019" } %>
+  username: <%= ENV.fetch("DATABASE_USERNAME") { "postgres" } %>
+  password: <%= ENV.fetch("DATABASE_PASSWORD") { "koudelk4" } %>
 
 development:
   <<: *default
