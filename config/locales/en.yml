@@ -49,3 +49,9 @@ en:
             more_information: More information
             participate: Participate
             see_all_processes: See all processes
+  activemodel:
+    verifications:
+      decidim:
+        sms:
+          authorizations:
+            sms_message: The verification code for Plaza Pública is  
