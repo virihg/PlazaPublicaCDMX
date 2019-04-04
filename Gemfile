@@ -5,8 +5,6 @@ source "https://rubygems.org"
 ruby RUBY_VERSION
 
 gem "decidim", "0.16.0"
-# gem "decidim-consultations", "0.16.0"
-# gem "decidim-initiatives", "0.16.0"
 
 gem "bootsnap", "~> 1.3"
 
@@ -17,9 +15,11 @@ gem "faker", "~> 1.9"
 gem 'rake','12.3.1'
 
 gem "figaro"
+gem 'twilio-ruby'
 gem 'decidim-consultations'
 gem 'decidim-initiatives'
-
+gem 'decidim-api'
+gem 'delayed_job_active_record'
 gem 'whenever', require: false
 
 group :development, :test do
@@ -38,6 +38,5 @@ end
 
 group :production do
   gem "passenger"
-  gem 'delayed_job_active_record'
   gem "daemons"
 end

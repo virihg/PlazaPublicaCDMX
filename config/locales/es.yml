@@ -18,3 +18,9 @@ es:
             more_information: Más información
             participate: Participar
             see_all_processes: Ver todos los procesos
+  activemodel:
+    verifications:
+      decidim:
+        sms:
+          authorizations:
+            sms_message: El código de verificación para Plaza Pública es 
