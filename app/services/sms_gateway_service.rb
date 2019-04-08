@@ -21,5 +21,6 @@ class SMSGatewayService
     http = Net::HTTP.new(url.hostname, url.port)
     http.use_ssl = true
     res = http.request(req)
+    puts res.body
   end
 end
