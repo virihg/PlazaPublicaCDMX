@@ -1,4 +1,3 @@
----
 en:
   activemodel:
     verifications:
@@ -35,3 +34,9 @@ en:
       greeting: Hi %{recipient}!
       instruction: Thank you for registering in Plaza Pública! <br>To confirm your email account, please enter this link.
       subject: Confirmation instructions
+  sessions:
+    new:
+      are_you_new?: New to the platform?
+      register: Sign up
+      sign_in_disabled: You can access with an external account
+      sign_up_disabled: Sign up is disabled, you can use an existing account to access
