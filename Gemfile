@@ -4,7 +4,7 @@ source "https://rubygems.org"
 
 ruby RUBY_VERSION
 
-gem "decidim", "0.16.0"
+gem "decidim", "0.17.0"
 
 gem "bootsnap", "~> 1.3"
 
@@ -15,17 +15,19 @@ gem "faker", "~> 1.9"
 gem 'rake','12.3.1'
 
 gem "figaro"
-gem 'twilio-ruby'
-gem 'decidim-consultations'
-gem 'decidim-initiatives'
-gem 'decidim-api'
+gem 'decidim-consultations', "0.17.0"
+gem 'decidim-initiatives', "0.17.0"
+gem 'decidim-api', "0.17.0"
 gem 'delayed_job_active_record'
 gem 'whenever', require: false
+gem 'wicked_pdf'
+gem 'wkhtmltopdf-binary'
+gem 'charlock_holmes', '0.7.6'
 
 group :development, :test do
   gem "byebug", "~> 10.0", platform: :mri
 
-  gem "decidim-dev", "0.16.0"
+  gem "decidim-dev", "0.17.0"
 end
 
 group :development do
