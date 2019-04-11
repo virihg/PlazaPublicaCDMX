@@ -27,4 +27,4 @@ en:
             see_all_processes: See all processes
   export_mailer:
     data_portability_export:
-      click_button: Hi %{name}. <br/> We reply your requests so we can retrieve your data file through Plaza Pública. You can download the file here.
+      click_button: Hi %{name}. <br/> Thank you for your request to obtain the file of your data in Plaza Pública. You can download the file here.
