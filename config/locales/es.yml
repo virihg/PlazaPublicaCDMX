@@ -51,3 +51,6 @@ es:
         new:
           password_help: Deben ser al menos 10 caracteres alfanúmericos
           tos_agreement: Al registrarte aceptas los términos y condiciones de uso.
+  decidim:
+    welcome_notification:
+      default_body: <p>Hola {{name}}, ¡Te damos la bienvenida a Plaza Pública! La plataforma de participación digital de la Ciudad de México donde la ciudadanía puede proponer, debatir, votar y decidir proyectos y disposiciones que afectan su vida en la ciudad.<br>Para garantizar la mayor transparencia y seguridad en los procesos, verifica tu cuenta con tu número celular  <a href="{{https://plazapublica.cdmx.gob.mx/sms/}}">aquí</a></p><br>Opina en la consulta del Programa de Gobierno 2018-2014<a href="{{https://plazapublica.cdmx.gob.mx/processes/programa-de-gobierno-cdmx}}">aquí</a></p><br>.<p>Consulta el aviso de privacidad <a href="{{https://plazapublica.cdmx.gob.mx/pages/aviso-de-privacidad}}">aquí</a></p><br><p>Plaza Pública.</p>
