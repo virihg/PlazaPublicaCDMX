@@ -35,6 +35,35 @@ en:
       data_portability_export:
         click_button: Hi %{name}. <br/> Thank you for your request to obtain the file of your data in Plaza Pública. You can download the file here.
         download: Download
+    proposals:     
+      participatory_text_proposal:
+        alternative_title: No hay textos participativos por el momento
+        buttons:
+          amend: Enmendar
+          comment: Comentario
+          comments: Comentarios
+          endorse: Like
+      proposal_endorsements_helper:
+        endorsement_button:
+          already_endorsed: Like
+          endorse: Like
+        render_endorsements_button_card_part:
+          endorse: Like
+      proposals:
+        endorsement_identities_cabin:
+          endorse: Like
+    events:     
+      gamification:
+        badge_earned:
+          email_intro: 'You have obtained the badge "<a href="%{resource_url}">%{badge_name}</a>" (nivel %{current_level}) for your participation in Plaza Pública!'
+          email_outro: You have received this notification because you have done activity in Plaza Pública.
+          email_subject: '¡You have obtained a new badge: %{badge_name}!'
+          notification_title: 'You have obtained the badge <a href="%{resource_path}">%{badge_name}</a> (nivel %{current_level}).'
+        level_up:
+          email_intro: 'You have reached the level %{current_level} en la insignia "<a href="%{resource_url}">%{badge_name}</a>"!'
+          email_outro: You have received this notification because you have done activity in Plaza Pública.
+          email_subject: 'You have reached the level %{current_level} in the badge %{badge_name}!'
+          notification_title: 'You have reached the level %{current_level} in the badge <a href="%{resource_path}">%{badge_name}</a> of Plaza Pública!'
   devise:
     mailer:
       confirmation_instructions:

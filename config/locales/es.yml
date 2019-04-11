@@ -35,6 +35,35 @@ es:
       data_portability_export:
         click_button: Hola %{name}. <br/> Gracias por tu solicitud para obtener el archivo de tus datos en Plaza Pública. Puedes descargarlo aquí.
         download: Descargar
+    proposals:     
+      participatory_text_proposal:
+        alternative_title: No hay textos participativos por el momento
+        buttons:
+          amend: Enmendar
+          comment: Comentario
+          comments: Comentarios
+          endorse: Me gusta
+      proposal_endorsements_helper:
+        endorsement_button:
+          already_endorsed: Me gusta
+          endorse: Me gusta
+        render_endorsements_button_card_part:
+          endorse: Me gusta
+      proposals:
+        endorsement_identities_cabin:
+          endorse: Me gusta
+    events:     
+      gamification:
+        badge_earned:
+          email_intro: '¡Has recibido la insignia "%{badge_name}" (nivel %{current_level}) por tu participación en Plaza Pública!.<br>Conócela <a href="%{resource_url}">aquí</a>'
+          email_outro: Has recibido esta notificación porque has realizado actividad en Plaza Pública.
+          email_subject: '¡Has obtenido una nueva insignia: %{badge_name} en Plaza Pública!'
+          notification_title: '¡Haz recibido la insignia "<a href="%{resource_url}">%{badge_name}</a>" (nivel %{current_level})!'
+        level_up:
+          email_intro: '¡Has alcanzado el nivel %{current_level} en la insignia "<a href="%{resource_url}">%{badge_name}</a>" de Plaza Pública!'
+          email_outro: Has recibido esta notificación porque has generado actividad en Plaza Pública.
+          email_subject: '¡Has conseguido el nivel %{current_level} en la insignia %{badge_name} de Plaza Pública!'
+          notification_title: '¡Has alcanzado el nivel %{current_level} en la insignia <a href="%{resource_path}">%{badge_name}</a> de Plaza Pública!'
   devise:
     mailer:
       confirmation_instructions:
@@ -42,5 +71,3 @@ es:
         greeting: Hola %{recipient}!
         instruction: ¡Gracias por registrarte en Plaza Pública!<br>Para confirmar tu cuenta de correo, por favor ingresa a esta liga.
         subject: Instrucciones de confirmación
-    
-      
