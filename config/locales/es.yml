@@ -1,4 +1,3 @@
----
 es:
   activemodel:
     verifications:
@@ -35,3 +34,12 @@ es:
       greeting: Hola %{recipient}!
       instruction: ¡Gracias por registrarte en Plaza Pública!<br>Para confirmar tu cuenta de correo, por favor ingresa a esta liga.
       subject: Instrucciones de confirmación
+  decidim:
+    devise:      
+      sessions:
+        new:
+          are_you_new?: ¿Eres nuevo en la plataforma?
+          register: Regístrate
+          sign_in_disabled: Puedes acceder con una cuenta externa
+          sign_up_disabled: El registro está deshabilitado, puedes usar una cuenta existente para acceder
+      
