@@ -1,7 +1,7 @@
 // // Variables
 //
-$primary: #E5406A;
-$secondary: #2CC4CF;
+// $primary: #E5406A;
+// $secondary: #2CC4CF;
 // $success: #57d685;
 // $warning: #ffae00;
 // $alert: #ec5840;
@@ -14,6 +14,42 @@ $secondary: #2CC4CF;
 // $twitter: #55acee;
 // $facebook: #3b5998;
 // $google: #dd4b39;
+
+$adipgray: #929190;
+$adipgreen: #28a231;
+$darkiegray: #8e8e8e;
+
+$primary: $adipgreen;
+.top-bar-plaza-publica > * {
+  background-color: #fff !important;
+  color: $adipgray !important;
+}
+
+.top-bar-plaza-publica {
+  background-color: #fff !important;
+  filter: drop-shadow(0px 5px 5px $darkiegray);
+}
+.logo-wrapper span {
+  color: $adipgray !important;
+}
+
+.topbar__dropmenu > ul > li > a {
+  color: $adipgray !important;
+}
+
+.topbar__dropmenu > ul > li > a::after {
+  color: $adipgreen !important;
+}
+
+#dropdown-pp > ul > li > a::after {
+  border-top-color: $adipgreen !important;
+}
+
+
+.topbar__user__login a {
+  color: $adipgray !important;
+}
+
 @font-face {
   font-family: Metropolis;
   src: url('https://www.adip.cdmx.gob.mx/storage/app/media/Rally/metropolis/Metropolis-Regular.otf');
