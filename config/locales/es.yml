@@ -25,3 +25,23 @@ es:
             participate: Participar
             past_processes: Procesos terminados
             see_all_processes: Ver todos los procesos
+    devise:
+      sessions:
+        new:
+          are_you_new?: '¿Aún no tienes cuenta en la plataforma?'
+          register: Crea una.
+          sign_in_disabled: Puedes acceder con una cuenta externa.
+          sign_up_disabled: El registro está deshabilitado, puede usar un usuario existente para acceder
+      mailer:
+        reset_password_instructions:
+          action: Cambiar mi contraseña
+          greeting: '¡Hola %{recipient}!'
+          instruction: Para recuperar tu contraseña, da click aquí.
+          instruction_2: Si tú no lo solicitaste, ignora este correo.
+          instruction_3: Tu contraseña no cambiará hasta que accedas al enlace de arriba y crees una nueva.
+          subject: Restablecer instrucciones de contraseña
+      registrations:
+        new:
+          password_help: Deben ser al menos 10 caracteres alfanúmericos
+          tos_agreement: Al registrarte aceptas los términos y condiciones de uso.
+
