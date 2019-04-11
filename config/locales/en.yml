@@ -28,7 +28,7 @@ en:
     devise:
       sessions:
         new:
-          are_you_new?: 'Don't have an account in the platform yet?'
+          are_you_new?: Don't have an account in the platform yet?
           register: Create one.
           sign_in_disabled: You can access with an external account
           sign_up_disabled: Sign up is disabled, you can use an existing account to access
@@ -40,3 +40,6 @@ en:
           instruction_2: If you didn't request this, please ignore this email.
           instruction_3: Your password won't change until you access the link above and create a new one.
           subject: Reset password instructions
+      registrations:
+        new:
+          password_help: Must been at least 10 alfanumeric characters
