@@ -24,19 +24,25 @@ en:
             participate: Participate
             past_processes: Past processes
             see_all_processes: See all processes
-  export_mailer:
-    data_portability_export:
-      click_button: Hi %{name}. <br/> Thank you for your request to obtain the file of your data in Plaza Pública. You can download the file here.
-      download: Download
-  mailer:
-    confirmation_instructions:
-      action: Confirm my account
-      greeting: Hi %{recipient}!
-      instruction: Thank you for registering in Plaza Pública! <br>To confirm your email account, please enter this link.
-      subject: Confirmation instructions
-  sessions:
-    new:
-      are_you_new?: New to the platform?
-      register: Sign up
-      sign_in_disabled: You can access with an external account
-      sign_up_disabled: Sign up is disabled, you can use an existing account to access
+    devise:      
+      sessions:
+        new:
+          are_you_new?: New to the platform?
+          register: Sign up
+          sign_in_disabled: You can access with an external account
+          sign_up_disabled: Sign up is disabled, you can use an existing account to access
+    export_mailer:
+      data_portability_export:
+        click_button: Hi %{name}. <br/> Thank you for your request to obtain the file of your data in Plaza Pública. You can download the file here.
+        download: Download
+  devise:
+    mailer:
+      confirmation_instructions:
+        action: Confirm my account
+        greeting: Hi %{recipient}!
+        instruction: Thank you for registering in Plaza Pública! <br>To confirm your email account, please enter this link.
+        subject: Confirmation instructions
+
+
+  
+  
