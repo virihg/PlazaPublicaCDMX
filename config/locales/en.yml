@@ -25,3 +25,7 @@ en:
             participate: Participate
             past_processes: Past processes
             see_all_processes: See all processes
+
+  devise:
+    registrations:
+      signed_up: Por favor revisa tu correo electrónico para activar tu cuenta en Plaza Pública.

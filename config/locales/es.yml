@@ -25,3 +25,12 @@ es:
             participate: Participar
             past_processes: Procesos terminados
             see_all_processes: Ver todos los procesos
+
+  devise:
+    registrations:
+      signed_up: Please check your email to activate your Public Plaza account.
+
+  activerecord:
+    models:
+      decidim/participatory_process:
+        other: Procesos participativos
