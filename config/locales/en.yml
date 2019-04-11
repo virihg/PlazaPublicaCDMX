@@ -25,3 +25,12 @@ en:
             participate: Participate
             past_processes: Past processes
             see_all_processes: See all processes
+    devise:
+      mailer:
+        reset_password_instructions:
+          action: Change my password
+          greeting: 'Hello %{recipient}!'
+          instruction: To change your password, do click here.
+          instruction_2: If you didn't request this, please ignore this email.
+          instruction_3: Your password won't change until you access the link above and create a new one.
+          subject: Reset password instructions
