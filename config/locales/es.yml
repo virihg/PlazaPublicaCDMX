@@ -26,6 +26,12 @@ es:
             past_processes: Procesos terminados
             see_all_processes: Ver todos los procesos
     devise:
+      sessions:
+        new:
+          are_you_new?: '¿Aún no tienes cuenta en la plataforma?'
+          register: Crea una.
+          sign_in_disabled: Puedes acceder con una cuenta externa.
+          sign_up_disabled: El registro está deshabilitado, puede usar un usuario existente para acceder
       mailer:
         reset_password_instructions:
           action: Cambiar mi contraseña

@@ -26,6 +26,12 @@ en:
             past_processes: Past processes
             see_all_processes: See all processes
     devise:
+      sessions:
+        new:
+          are_you_new?: 'Don't have an account in the platform yet?'
+          register: Create one.
+          sign_in_disabled: You can access with an external account
+          sign_up_disabled: Sign up is disabled, you can use an existing account to access
       mailer:
         reset_password_instructions:
           action: Change my password
