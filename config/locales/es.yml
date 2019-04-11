@@ -40,3 +40,7 @@ es:
           instruction_2: Si tú no lo solicitaste, ignora este correo.
           instruction_3: Tu contraseña no cambiará hasta que accedas al enlace de arriba y crees una nueva.
           subject: Restablecer instrucciones de contraseña
+      registrations:
+        new:
+          password_help: Deben ser al menos 10 caracteres alfanúmericos
+
