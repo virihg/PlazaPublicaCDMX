@@ -2,11 +2,11 @@
 
 Decidim.configure do |config|
   config.application_name = "Plaza Pública"
-  config.mailer_sender = "alejandra.gonzalez@cdmx.org.mx"
+  config.mailer_sender = "plazapublica@cdmx.gob.mx"
 
   # Change these lines to set your preferred locales
-  config.default_locale = :en
-  config.available_locales = [:en, :ca, :es]
+  config.default_locale = :es
+  config.available_locales = [:en, :es]
 
   # Geocoder configuration
   # config.geocoder = {
