@@ -43,4 +43,5 @@ es:
       registrations:
         new:
           password_help: Deben ser al menos 10 caracteres alfanúmericos
+          tos_agreement: Al registrarte aceptas los términos y condiciones de uso.
 
