@@ -5,7 +5,7 @@ es:
       decidim:
         sms:
           authorizations:
-            sms_message: El código de verificación para Plaza Pública es
+            sms_message: ¡Hola! Tu código de verificación para Plaza Pública es
   decidim:
     participatory_processes:
       admin:
@@ -44,4 +44,8 @@ es:
         new:
           password_help: Deben ser al menos 10 caracteres alfanúmericos
           tos_agreement: Al registrarte aceptas los términos y condiciones de uso.
-
+    verifications:
+      sms:
+        authorizations:
+          new:
+            mobile_phone_number: Número de celular
