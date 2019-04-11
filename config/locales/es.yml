@@ -25,3 +25,12 @@ es:
             participate: Participar
             past_processes: Procesos terminados
             see_all_processes: Ver todos los procesos
+    devise:
+      mailer:
+        reset_password_instructions:
+          action: Cambiar mi contraseña
+          greeting: '¡Hola %{recipient}!'
+          instruction: Para recuperar tu contraseña, da click aquí.
+          instruction_2: Si tú no lo solicitaste, ignora este correo.
+          instruction_3: Tu contraseña no cambiará hasta que accedas al enlace de arriba y crees una nueva.
+          subject: Restablecer instrucciones de contraseña
