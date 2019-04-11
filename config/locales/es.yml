@@ -27,4 +27,4 @@ es:
             see_all_processes: Ver todos los procesos
   export_mailer:
     data_portability_export:
-      click_button: Hola %{name}. <br/> Respondemos a tu solicitud para obtener el archivo de tus datos en Plaza Pública. Puedes descargarlo aquí.
+      click_button: Hola %{name}. <br/> Gracias por tu solicitud para obtener el archivo de tus datos en Plaza Pública. Puedes descargarlo aquí.
