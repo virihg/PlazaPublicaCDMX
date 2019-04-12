@@ -9,7 +9,24 @@ en:
     models:
       decidim/participatory_process:
         other: Participatory processes
+      decidim/proposals/proposal_endorsement:
+        one: Like
+        other: Like
   decidim:
+    metrics:
+      endorsements:
+        description: Number of likes to proposals
+        object: like
+        title: Like
+    components:
+      proposals:
+        actions:
+          create: Crear
+          endorse: Unirse
+        settings:
+          step:
+            endorsements_blocked: Like blocked
+            endorsements_enabled: Like enabled
     participatory_processes:
       admin:
         content_blocks:
@@ -73,6 +90,10 @@ en:
         click_button: Hi %{name}. <br/> Thank you for your request to obtain the file of your data in Plaza Pública. You can download the file here.
         download: Download
     proposals:     
+      models:
+        proposal:
+          fields:
+            endorsements: Like
       participatory_text_proposal:
         alternative_title: No hay textos participativos por el momento
         buttons:
