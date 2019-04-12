@@ -528,3 +528,13 @@ h5 {
     }
   }
 }
+
+.index_right_proposals {
+  position: absolute;
+  right: 0;
+}
+
+.proposal_content_left {
+  position: relative;
+  z-index: 10;
+}
