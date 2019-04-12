@@ -542,3 +542,20 @@ h5 {
   position: relative;
   z-index: 10;
 }
+
+.mini-footer {
+  padding: 0;
+  font-size: 0.6em;
+  background-color: #000000;
+  .row {
+    max-width: none;
+  }
+}
+
+.decidim-logo-min img {
+  height: 20px;
+}
+
+.cc-badge img {
+  height: 20px;
+}
