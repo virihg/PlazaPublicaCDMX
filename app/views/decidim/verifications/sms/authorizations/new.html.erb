@@ -12,7 +12,7 @@
           <div class="card__content">
             <%= decidim_form_for(@form, url: authorization_path(redirect_url: params[:redirect_url])) do |form| %>
               <div class="field">
-                <%= form.text_field :mobile_phone_number, label: t(".mobile_phone_number") %>
+                <%= form.telephone_field :mobile_phone_number, label: t(".mobile_phone_number"), placeholder: '525599999999' %>
               </div>
 
               <div class="actions">
