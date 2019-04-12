@@ -3,6 +3,7 @@
   <div class="hero__container text-center">
     <div class="row">
       <div class="columns small-centered large-10">
+        
         <h1 class="text-highlight font-weight-bold hero__title">
           <% if translated_welcome_text.blank? %>
             <%= t("decidim.pages.home.hero.welcome", organization: current_organization.name) %>
@@ -10,13 +11,17 @@
             <%= decidim_sanitize translated_welcome_text %>
           <% end %>
         </h1>
+
         <h3 class="text-highlight hero__excerpt">Plaza Pública es la plataforma de participación de la Ciudad de México donde la ciudadanía puede proponer, debatir, votar y decidir proyectos y disposiciones que afectan su vida en la ciudad.</h3>
+        
+        <p>Próximamente podrás involucrarte en un grupo de decisión temático o de tu barrio.</p>
+        
         <div class="card-deck">
           
           <div class="cole-md-4">
             <div class="card-plaza">
               <h2 class="card-plaza__title">Consultas</h2>
-              <p class="card-plaza__excerpt">Vota en los temas puestos a consulta por parte de gobierno</p>
+              <p class="card-plaza__excerpt">Vota en los temas puestos a consulta por parte del gobierno</p>
               <a href="https://plazapublica.cdmx.gob.mx/processes/programa-de-gobierno-cdmx" class="card-plaza__a">Ir a consultas</a>
             </div>
           </div>
@@ -33,7 +38,7 @@
             <div class="card-plaza disabled">
               <h2 class="card-plaza__title">Iniciativas</h2>
               <p class="card-plaza__excerpt">Pronto podrás crear propuestas y firmas para mejorar la ciudad</p>
-              <button class="card-plaza__btn">Ir a Asambleas</button>
+              <button class="card-plaza__btn">Ir a Iniciativas</button>
             </div>
           </div>
         </div>
