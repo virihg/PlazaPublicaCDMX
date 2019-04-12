@@ -1,4 +1,6 @@
 es:
+  locale:
+    name: Español
   activemodel:
     verifications:
       decidim:
