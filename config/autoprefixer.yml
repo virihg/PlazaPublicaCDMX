@@ -1,0 +1,6 @@
+flexbox: no-2009
+grid: autoplace
+browsers:
+  - "> 1%"
+  - "last 2 versions"
+  - "IE > 8"

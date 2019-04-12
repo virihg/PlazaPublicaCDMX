@@ -1,48 +1,55 @@
 
 <section class="extended hero home-section" style="background-image:url(<%= background_image %>);">
-  <div class="hero__container">
+  <div class="hero__container text-center">
     <div class="row">
-      <div class="columns small-centered text-left large-10">
-        <h1 class="text-highlight font-weight-bold">
+      <div class="columns small-centered large-10">
+        
+        <h1 class="text-highlight font-weight-bold hero__title">
           <% if translated_welcome_text.blank? %>
             <%= t("decidim.pages.home.hero.welcome", organization: current_organization.name) %>
           <% else %>
             <%= decidim_sanitize translated_welcome_text %>
           <% end %>
         </h1>
-        <h3 class="text-highlight">Plaza Pública es la plataforma de participación de la Ciudad de México donde la ciudadanía puede proponer, debatir y votar para decidir proyectos y disposiciones que afectan nuestra vida en la ciudad.</h3>
-        <br>
-        <div class="rowo">
-          <div class="cole-md-4 cole-sm-12">
-            <div class="cardo" style="background: rgba(255, 255, 255, 0.7);">
-              <div class="card-body">
-                <h5 class="card-title font-weight-bold text-left">Asambleas</h5>
-                <p class="card-text">Involúcrate en un grupo de decisión temático o de tu barrio.</p>
-                <%= link_to "Ir a Asambleas", "/assemblies", class: "btn btn-primary" %>
-              </div>
+
+        <h3 class="text-highlight hero__excerpt">Plaza Pública es la plataforma de participación de la Ciudad de México donde la ciudadanía puede proponer, debatir, votar y decidir proyectos y disposiciones que afectan su vida en la ciudad.</h3>
+                
+        <div class="card-deck">
+          
+          <div class="cole-md-4">
+            <div class="card-plaza">
+              <h2 class="card-plaza__title">Consultas</h2>
+              <p class="card-plaza__excerpt">Vota en los temas puestos a consulta por parte del gobierno</p>
+              <a href="https://plazapublica.cdmx.gob.mx/processes/programa-de-gobierno-cdmx/f/1/" class="card-plaza__a">Ir a consultas</a>
             </div>
           </div>
-          <div class="cole-md-4 cole-sm-12">
-            <div class="cardo" style="background: rgba(255, 255, 255, 0.7);">
-              <div class="card-body">
-                <h5 class="card-title font-weight-bold text-left">Consultas</h5>
-                <p class="card-text">Vota en los temas puestos a consulta por parte de gobierno.</p>
-                <%= link_to "Ir a Consultas", "/consultations", class: "btn btn-primary" %>
-              </div>
+
+          <div class="cole-md-4">
+            <div class="card-plaza disabled">
+              <h2 class="card-plaza__title">Asambleas</h2>
+              <p class="card-plaza__excerpt">Próximamente podrás involucrarte en un grupo de decisión temático.</p>
+              <button class="card-plaza__btn">Ir a Asambleas</button>
             </div>
           </div>
-          <div class="cole-md-4 cole-sm-12">
-            <div class="cardo" style="background: rgba(255, 255, 255, 0.7);">
-              <div class="card-body">
-                <h5 class="card-title font-weight-bold text-left">Iniciativas</h5>
-                <p class="card-text">Pronto podrás crear propuestas y firmas para mejorar la ciudad.</p>
-                <%= link_to "Ir a Iniciativas", "/initiatives", class: "btn btn-primary" %>
-              </div>
+          
+          <div class="cole-md-4">
+            <div class="card-plaza disabled">
+              <h2 class="card-plaza__title">Iniciativas</h2>
+              <p class="card-plaza__excerpt">Pronto podrás crear propuestas y firmas para mejorar la ciudad</p>
+              <button class="card-plaza__btn">Ir a Iniciativas</button>
             </div>
           </div>
         </div>
+
+        <div class="media-plaza">
+          <div>
+              <h2 class="media-plaza__title">Programa de Gobierno 2018 - 2024</h2>
+              <p class="media-plaza__excerpt">Conoce y comenta a favor o en contra de las <span>acciones del Programa de Gobierno 2019-2024</span></p>
+              <a href="https://plazapublica.cdmx.gob.mx/processes/programa-de-gobierno-cdmx" class="btn media-plaza__btn">Participar</a>
+          </div>
+          <%= image_tag "card-img.jpg", class: "media-plaza__image", alt: "edificios en la cdmx"  %>
+        </div>
       </div>
     </div>
-
   </div>
 </section>

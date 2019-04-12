@@ -1,7 +1,7 @@
 // // Variables
 //
-$primary: #E5406A;
-$secondary: #2CC4CF;
+// $primary: #E5406A;
+// $secondary: #2CC4CF;
 // $success: #57d685;
 // $warning: #ffae00;
 // $alert: #ec5840;
@@ -14,6 +14,41 @@ $secondary: #2CC4CF;
 // $twitter: #55acee;
 // $facebook: #3b5998;
 // $google: #dd4b39;
+
+$adipgray: #929190;
+$adipgreen: #28a231;
+$darkiegray: #8e8e8e;
+
+$primary: $adipgreen;
+.top-bar-plaza-publica > * {
+  background-color: #fff !important;
+  color: $adipgray !important;
+}
+
+.top-bar-plaza-publica {
+  background-color: #fff !important;
+}
+.logo-wrapper span {
+  color: $adipgray !important;
+}
+
+.topbar__dropmenu > ul > li > a {
+  color: $adipgray !important;
+}
+
+.topbar__dropmenu > ul > li > a::after {
+  color: $adipgreen !important;
+}
+
+#dropdown-pp > ul > li > a::after {
+  border-top-color: $adipgreen !important;
+}
+
+
+.topbar__user__login a {
+  color: $adipgray !important;
+}
+
 @font-face {
   font-family: Metropolis;
   src: url('https://www.adip.cdmx.gob.mx/storage/app/media/Rally/metropolis/Metropolis-Regular.otf');
@@ -218,4 +253,352 @@ h5 {
 
 .hero::after {
   background-color: transparent;
+}
+
+.header-plaza {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.7rem 1rem;
+  position: relative;
+
+  &::before,
+  &::after {
+    content: normal;
+  }
+
+  &__logo {
+    height: 50px;
+    width: auto;
+    @media (max-width: 767.98px) {
+      height: 40px;
+    }
+
+    &:last-of-type {
+      border-left: 1px solid #979797;
+      margin-left: 0.85rem;
+      padding-left: 0.85rem;
+    }
+  }
+
+  &__nav {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+    @media (max-width: 485px) {
+      display: none;
+    }
+
+    li {
+      position: relative;
+      transition-duration: 0.5s;
+
+      a {
+        color: #898d8d;
+        display: block;
+        height: 100%;
+      }
+
+      &:hover,
+      &:focus-within {
+        cursor: pointer;
+      }
+
+      &:focus-within a {
+        outline: none;
+      }
+    }
+
+    > li {
+      font-weight: 500;
+
+      + li {
+        margin-left: 6px;
+        padding-left: 10px;
+
+        &::before {
+          align-items: center;
+          bottom: 0;
+          color: #28a231;
+          content: '|';
+          display: flex;
+          font-size: 20px;
+          height: 100%;
+          left: 0;
+          position: absolute;
+          top: 0;
+        }
+      }
+    }
+
+    .dropdown {
+      margin-right: 1rem;
+
+      a::after {
+        border-color: #28a231 transparent transparent;
+      }
+    }
+  }
+}
+
+.hero__title {
+  @media (max-width: 480px) {
+    font-size: 2.2rem;
+    line-height: 1.2;
+    margin-bottom: 1.5rem;
+  }
+}
+
+.hero__excerpt {
+  @media (max-width: 480px) {
+    font-size: 1.2rem;
+  }
+}
+
+.media-plaza {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  display: inline-flex;
+  margin: 3rem 15px 0;
+  padding: 1.5rem 2.75rem;
+  text-align: left;
+  @media (max-width: 767.98px) {
+    flex-direction: column-reverse;
+  }
+  @media (max-width: 480px) {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  &__image {
+    border-radius: 50%;
+    height: 170px;
+    margin: 0 auto 1.5rem auto;
+    width: 170px;
+    @media (min-width: 768px) {
+      margin: 0 0 0 3rem;
+    }
+  }
+
+  &__title {
+    color: #00b140;
+    font-size: 1.5625rem;
+    font-weight: 600;
+  }
+
+  &__excerpt {
+    color: black;
+    font-size: 1.125rem;
+    @media (min-width: 767.98px) {
+
+      span {
+        display: block;
+      }
+    }
+  }
+
+  &__btn {
+    background-color: #00b140;
+    border-color: #00b140;
+    border-radius: 7px;
+    color: white;
+    font-size: 1.125rem;
+    font-weight: 600;
+  }
+}
+
+.footer-plaza-publica-adip{
+  background-color:#262629;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.4rem 1rem;
+  @media (max-width: 715px) {
+    flex-direction: column;
+  }
+}
+
+.caja-footer-plaza-publica {
+  @media (max-width: 715px) {
+    margin-bottom: 3rem;
+  }
+  @media (max-width: 390px) {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+.image-fondo-negro-gobierno{
+  padding-right: 10px;
+  border-right-style: 2px solid #ffffff;
+}
+
+.image-logo-adip {
+  margin-left: 10px;
+}
+
+.image-logo--plaza-adip {
+  padding-left: 10px;
+  margin-left: 10px;
+  padding-top: 8px;
+  border-left-style: solid;
+  border-left-color: #ffffff;
+  border-left-width: 2px;
+}
+
+.texto-footer-adip-plaza {
+  margin-bottom: 0;
+  font-size: 1rem;
+  color: #fff;
+  @media (max-width: 576.98px) {
+    font-size: 0.875rem;
+  }
+
+  + .texto-footer-adip-plaza {
+    margin-left: 1.5rem;
+    @media (max-width: 390px) {
+      margin-left: 1.2rem;
+    }
+  }
+}
+
+.footer__logo {
+  height: 30px;
+  width: auto;
+
+  &--sm {
+    height: 22px;
+  }
+
+  + .footer__logo {
+    @media (min-width: 391px) {
+      border-left: 1px solid white;
+      margin-left: 0.5rem;
+      padding-left: 0.5rem;
+    }
+    @media (max-width: 390px) {
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+.footer-separator {
+
+  > main,
+  & {
+    display: flex;
+    flex-direction: column;
+  }
+
+  > main {
+
+    .hero,
+    & {
+      flex-grow: 1;
+    }
+  }
+}
+
+@media (max-width: 639px) {
+  .mini-footer .large-4 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+}
+
+.topbar__notifications .icon,
+.topbar__conversations .icon {
+  fill: $darkiegray;
+  opacity: .3;
+}
+
+.topbar__user__logged {
+  margin-left: 0;
+  padding-right: 0;
+
+  .dropdown {
+    margin-right: 0;
+
+    > li a {
+      padding-right: 0;
+    }
+  }
+}
+
+.index_right_proposals {
+  position: absolute;
+  right: 0;
+  display: block;
+  @media (max-width: 639px) {
+    display: none;
+  }
+}
+
+.proposal_content_left {
+  position: relative;
+  z-index: 10;
+}
+
+.mini-footer {
+  padding: 0;
+  font-size: 0.6em;
+  background-color: #000000;
+  .row {
+    max-width: none;
+  }
+}
+
+.decidim-logo-min img {
+  height: 20px;
+}
+
+.cc-badge img {
+  height: 20px;
+}
+.card-deck {
+  margin-top: 3rem;
+}
+
+.card-plaza {
+  background-color: $white;
+  border-top: 5px solid #00b140;
+  padding: 2rem 1rem 1rem;
+
+  &__title {
+    font-size: 1.75rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+  }
+
+  &__excerpt {
+    margin-bottom: 2rem;
+  }
+
+  &__btn {
+    background: #00b140;;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    padding: 1rem;
+  }
+
+  &__a {
+    background: #00b140;;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    padding: 1rem;
+    display: block;
+    &:hover {
+      color: white;
+    }
+  }
+
+  &.disabled {
+    cursor: not-allowed;
+    filter: grayscale(100%);
+  }
 }
