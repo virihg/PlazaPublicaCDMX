@@ -441,3 +441,20 @@ h5 {
     padding-left: 0.5rem;
   }
 }
+
+.footer-separator {
+
+  > main,
+  & {
+    display: flex;
+    flex-direction: column;
+  }
+
+  > main {
+
+    .hero,
+    & {
+      flex-grow: 1;
+    }
+  }
+}
