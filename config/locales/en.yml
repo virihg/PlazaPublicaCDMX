@@ -101,18 +101,10 @@ en:
           email_outro: You have received this notification because you have done activity in Plaza Pública.
           email_subject: 'You have reached the level %{current_level} in the badge %{badge_name}!'
           notification_title: 'You have reached the level %{current_level} in the badge <a href="%{resource_path}">%{badge_name}</a> of Plaza Pública!'
-     reply_created:
-      email_intro: You have an answer to the comment you do in Plaza Pública.
-      email_outro: Do click here to read it "%{author_path}"
-      email_subject:  "%{author_name} has replied your comment in %{resource_title}"
-      notification_title: <a href="%{author_path}">%{author_name} %{author_nickname}</a> has replied your comment in <a href="%{resource_path}">%{resource_title}</a>
     welcome_notification:
-      default_body: <p>Hello {{name}}, ¡Welcome to Plaza Pública! The digital participation platform of Mexico City where citizens can propose,debate, vote and decide on projects and provisions that affect your life in the city<br>To guarantee the highest transparency and security in the processes, verify your account with your cell phone number  <a href="{{https://plazapublica.cdmx.gob.mx/sms/}}">here</a></p><br>Comment on the Government Program consultation 2018-2014<a href="{{https://plazapublica.cdmx.gob.mx/processes/programa-de-gobierno-cdmx}}">here</a></p><br>.<p>Check the privacy notice <a href="{{https://plazapublica.cdmx.gob.mx/pages/aviso-de-privacidad}}">here</a></p><br><p>Plaza Pública.</p>     
+      default_body: <p>Hello {{name}}, ¡Welcome to Plaza Publica! The digital participation platform of Mexico City where citizens can propose,debate, vote and decide on projects and provisions that affect your life in the city<br>To guarantee the highest transparency and security in the processes, verify your account with your cell phone number  <a href="{{https://plazapublica.cdmx.gob.mx/sms/}}">here</a></p><br>Comment on the Government Program consultation 2018-2014<a href="{{https://plazapublica.cdmx.gob.mx/processes/programa-de-gobierno-cdmx}}">here</a></p><br>.<p>Check the privacy notice <a href="{{https://plazapublica.cdmx.gob.mx/pages/aviso-de-privacidad}}">here</a></p><br><p>Plaza Pública.</p>     
     verifications:
       sms:
         authorizations:
           new:
             mobile_phone_number: Cellphone number
-        
-                  
-      
