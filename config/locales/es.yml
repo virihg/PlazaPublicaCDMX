@@ -1,3 +1,4 @@
+---
 es:
   activemodel:
     verifications:
@@ -5,10 +6,6 @@ es:
         sms:
           authorizations:
             sms_message: ¡Hola! Tu código de verificación para Plaza Pública es
-  activerecord:
-    models:
-      decidim/participatory_process:
-        other: Procesos participativos
   decidim:
     participatory_processes:
       admin:
@@ -28,76 +25,36 @@ es:
             participate: Participar
             past_processes: Procesos terminados
             see_all_processes: Ver todos los procesos
-    devise:
-      sessions:
-        new:
-          are_you_new?: '¿Aún no tienes cuenta en la plataforma?'
-          register: Crea una.
-          sign_in_disabled: Puedes acceder con una cuenta externa.
-          sign_up_disabled: El registro está deshabilitado, puede usar un usuario existente para acceder      
-      mailer:
-        reset_password_instructions:
-          action: Cambiar mi contraseña
-          greeting: '¡Hola %{recipient}!'
-          instruction: Para recuperar tu contraseña, da click aquí.
-          instruction_2: Si tú no lo solicitaste, ignora este correo.
-          instruction_3: Tu contraseña no cambiará hasta que accedas al enlace de arriba y crees una nueva.
-          subject: Restablecer instrucciones de contraseña
-        confirmation_instructions:
-          action: Confirmar mi cuenta
-          greeting: Hola %{recipient}!
-          instruction: ¡Gracias por registrarte en Plaza Pública!<br>Para confirmar tu cuenta de correo, por favor ingresa a esta liga.
-          subject: Instrucciones de confirmación
-      welcome_notification:
-        default_body: <p>Hola {{name}}, ¡Te damos la bienvenida a Plaza Pública! La plataforma de participación digital de la Ciudad de México donde la ciudadanía puede proponer, debatir, votar y decidir proyectos y disposiciones que afectan su vida en la ciudad.<br>Para garantizar la mayor transparencia y seguridad en los procesos, verifica tu cuenta con tu número celular  <a href="{{https://plazapublica.cdmx.gob.mx/sms/}}">aquí</a></p><br>Opina en la consulta del Programa de Gobierno 2018-2014<a href="{{https://plazapublica.cdmx.gob.mx/processes/programa-de-gobierno-cdmx}}">aquí</a></p><br>.<p>Consulta el aviso de privacidad <a href="{{https://plazapublica.cdmx.gob.mx/pages/aviso-de-privacidad}}">aquí</a></p><br><p>Plaza Pública.</p>
-      registrations:
-        new:
-          password_help: Deben ser al menos 10 caracteres alfanúmericos
-          tos_agreement: Al registrarte aceptas los términos y condiciones de uso.
-    verifications:
+    welcome_notification:
+      default_body: <p>Hola {{name}}, ¡Te damos la bienvenida a Plaza Pública! La plataforma de participación digital de la Ciudad de México donde la ciudadanía puede proponer, debatir, votar y decidir proyectos y disposiciones que afectan su vida en la ciudad.<br>Para garantizar la mayor transparencia y seguridad en los procesos, verifica tu cuenta con tu número celular  <a href="{{https://plazapublica.cdmx.gob.mx/sms/}}">aquí</a></p><br>Opina en la consulta del Programa de Gobierno 2018-2014<a href="{{https://plazapublica.cdmx.gob.mx/processes/programa-de-gobierno-cdmx}}">aquí</a></p><br>.<p>Consulta el aviso de privacidad <a href="{{https://plazapublica.cdmx.gob.mx/pages/aviso-de-privacidad}}">aquí</a></p><br><p>Plaza Pública.</p>
+
+  devise:
+    registrations:
+      signed_up: Please check your email to activate your Public Plaza account.
+  activerecord:
+    models:
+      decidim/participatory_process:
+        other: Procesos participativos
+  devise:
+    sessions:
+      new:
+        are_you_new?: '¿Aún no tienes cuenta en la plataforma?'
+        register: Crea una.
+        sign_in_disabled: Puedes acceder con una cuenta externa.
+        sign_up_disabled: El registro está deshabilitado, puede usar un usuario existente para acceder
+    mailer:
+      reset_password_instructions:
+        action: Cambiar mi contraseña
+        greeting: '¡Hola %{recipient}!'
+        instruction: Para recuperar tu contraseña, da click aquí.
+        instruction_2: Si tú no lo solicitaste, ignora este correo.
+        instruction_3: Tu contraseña no cambiará hasta que accedas al enlace de arriba y crees una nueva.
+        subject: Restablecer instrucciones de contraseña
+    registrations:
+      new:
+        password_help: Deben ser al menos 10 caracteres alfanúmericos
+        tos_agreement: Al registrarte aceptas los términos y condiciones de uso.
+  verifications:
       sms:
         authorizations:
           new:
-            mobile_phone_number: Número de celular
-    export_mailer:
-      data_portability_export:
-        click_button: Hola %{name}. <br/> Gracias por tu solicitud para obtener el archivo de tus datos en Plaza Pública. Puedes descargarlo aquí.
-        download: Descargar
-    proposals:     
-      participatory_text_proposal:
-        alternative_title: No hay textos participativos por el momento
-        buttons:
-          amend: Enmendar
-          comment: Comentario
-          comments: Comentarios
-          endorse: Me gusta
-      proposal_endorsements_helper:
-        endorsement_button:
-          already_endorsed: Me gusta
-          endorse: Me gusta
-        render_endorsements_button_card_part:
-          endorse: Me gusta
-      proposals:
-        endorsement_identities_cabin:
-          endorse: Me gusta
-    events:     
-      gamification:
-        badge_earned:
-          email_intro: '¡Has recibido la insignia "%{badge_name}" (nivel %{current_level}) por tu participación en Plaza Pública!.<br>Conócela <a href="%{resource_url}">aquí</a>'
-          email_outro: Has recibido esta notificación porque has realizado actividad en Plaza Pública.
-          email_subject: '¡Has obtenido una nueva insignia: %{badge_name} en Plaza Pública!'
-          notification_title: '¡Haz recibido la insignia "<a href="%{resource_url}">%{badge_name}</a>" (nivel %{current_level})!'
-        level_up:
-          email_intro: '¡Has alcanzado el nivel %{current_level} en la insignia "<a href="%{resource_url}">%{badge_name}</a>" de Plaza Pública!'
-          email_outro: Has recibido esta notificación porque has generado actividad en Plaza Pública.
-          email_subject: '¡Has conseguido el nivel %{current_level} en la insignia %{badge_name} de Plaza Pública!'
-          notification_title: '¡Has alcanzado el nivel %{current_level} en la insignia <a href="%{resource_path}">%{badge_name}</a> de Plaza Pública!'
-    welcome_notification:
-      default_body: <p>Hola {{name}}, ¡Te damos la bienvenida a Plaza Pública! La plataforma de participación digital de la Ciudad de México donde la ciudadanía puede proponer, debatir, votar y decidir proyectos y disposiciones que afectan su vida en la ciudad.<br>Para garantizar la mayor transparencia y seguridad en los procesos, verifica tu cuenta con tu número celular  <a href="{{https://plazapublica.cdmx.gob.mx/sms/}}">aquí</a></p><br>Opina en la consulta del Programa de Gobierno 2018-2014<a href="{{https://plazapublica.cdmx.gob.mx/processes/programa-de-gobierno-cdmx}}">aquí</a></p><br>.<p>Consulta el aviso de privacidad <a href="{{https://plazapublica.cdmx.gob.mx/pages/aviso-de-privacidad}}">aquí</a></p><br><p>Plaza Pública.</p>     
-  
-
-      
-          
-     
-     
-
