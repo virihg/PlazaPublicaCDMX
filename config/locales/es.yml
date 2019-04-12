@@ -94,5 +94,10 @@ es:
           email_outro: Has recibido esta notificación porque has generado actividad en Plaza Pública.
           email_subject: '¡Has conseguido el nivel %{current_level} en la insignia %{badge_name} de Plaza Pública!'
           notification_title: '¡Has alcanzado el nivel %{current_level} en la insignia <a href="%{resource_path}">%{badge_name}</a> de Plaza Pública!'
+      reply_created:
+        email_intro: Tienes una respuesta al comentario que hiciste en Plaza Pública.
+        email_outro: Da click aquí para leerla "%{author_path}"
+        email_subject: "%{author_name} ha respondido a tu comentario en %{resource_title}"
+        notification_title: <a href="%{author_path}">%{author_name} %{author_nickname}</a> ha respondido a tu comentario en <a href="%{resource_path}">%{resource_title}</a>   
     welcome_notification:
       default_body: <p>Hola {{name}}, ¡Te damos la bienvenida a Plaza Pública! La plataforma de participación digital de la Ciudad de México donde la ciudadanía puede proponer, debatir, votar y decidir proyectos y disposiciones que afectan su vida en la ciudad.<br>Para garantizar la mayor transparencia y seguridad en los procesos, verifica tu cuenta con tu número celular  <a href="{{https://plazapublica.cdmx.gob.mx/sms/}}">aquí</a></p><br>Opina en la consulta del Programa de Gobierno 2018-2014<a href="{{https://plazapublica.cdmx.gob.mx/processes/programa-de-gobierno-cdmx}}">aquí</a></p><br>.<p>Consulta el aviso de privacidad <a href="{{https://plazapublica.cdmx.gob.mx/pages/aviso-de-privacidad}}">aquí</a></p><br><p>Plaza Pública.</p>
