@@ -364,6 +364,7 @@ h5 {
   display: inline-flex;
   margin: 3rem 15px 0;
   padding: 1.5rem 2.75rem;
+  position: relative;
   text-align: left;
   @media (max-width: 767.98px) {
     flex-direction: column-reverse;
@@ -407,11 +408,16 @@ h5 {
     color: white;
     font-size: 1.125rem;
     font-weight: 600;
+
+    &:hover {
+      background: darken(#00b140, 15%);
+      color: white;
+    }
   }
 }
 
 .footer-plaza-publica-adip{
-  background-color:#262629;
+  background-color:#000000;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -543,7 +549,7 @@ h5 {
 }
 
 .mini-footer {
-  padding: 0;
+  padding: 0 0 15px 0;
   font-size: 0.6em;
   background-color: #000000;
   .row {
@@ -559,13 +565,19 @@ h5 {
   height: 20px;
 }
 .card-deck {
-  margin-top: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 3rem -15px 0;
 }
 
 .card-plaza {
   background-color: $white;
   border-top: 5px solid #00b140;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   padding: 2rem 1rem 1rem;
+  position: relative;
 
   &__title {
     font-size: 1.75rem;
@@ -577,29 +589,38 @@ h5 {
     margin-bottom: 2rem;
   }
 
-  &__btn {
-    background: #00b140;;
+  &__link {
+    background: #00b140;
     border-radius: 10px;
     color: white;
     font-weight: bold;
-    padding: 1rem;
-  }
-
-  &__a {
-    background: #00b140;;
-    border-radius: 10px;
-    color: white;
-    font-weight: bold;
+    margin-top: auto;
     padding: 1rem;
     display: block;
+
     &:hover {
+      background: darken(#00b140, 15%);
       color: white;
     }
   }
 
   &.disabled {
-    cursor: not-allowed;
     filter: grayscale(100%);
+
+    .card-plaza__link {
+      pointer-events: none;
+    }
+  }
+}
+
+.card-hover:not(.disabled) {
+  backface-visibility: hidden;
+  transform: translateZ(0);
+  transition: all 0.3s cubic-bezier(0.53, 0.01, 0.36, 1.63);
+
+  &:hover {
+    box-shadow: 0 8px 17px 2px rgba(0, 0, 0, 0.14),0 3px 14px 2px rgba(0, 0, 0, 0.12),0 5px 5px -3px rgba(0, 0, 0, 0.2);
+    transform: scale(1.005)
   }
 }
 
@@ -708,6 +729,7 @@ li a:focus {
     text-align: center;
     width: 100%;
   }
+
 }
 
 /* demo styles */

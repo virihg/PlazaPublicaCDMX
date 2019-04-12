@@ -1,0 +1,20 @@
+<section class="extended" id="participatory_process-statistics" class="statistics">
+  <div class="row column">
+    <h4 class="section-heading"><%= t("statistics.headline", scope: "decidim.participatory_processes") %></h4>
+  </div>
+  <div class="row">
+    <div class="columns small-centered mediumlarge-12 large-12 process_stats">
+      <%= stats.highlighted %>
+      <script type="text/javascript">
+      	$( document ).ready(function() {
+      		$( ".endorsements_count" ).each(function( index ) {
+  				this.innerHTML=this.innerHTML.replace("Endorsement", "Like");
+  				this.innerHTML=this.innerHTML.replace("Endorsements", "Likes");
+  				this.innerHTML=this.innerHTML.replace("Adhesiones", "Me gusta");
+  				this.innerHTML=this.innerHTML.replace("Adhesión", "Me gusta");
+			});
+		});      	
+      </script>
+    </div>
+  </div>
+</section>
