@@ -14,4 +14,4 @@
 //= require activestorage
 //= require_tree .
 //= require decidim
-= require nori
+console.log('app');
