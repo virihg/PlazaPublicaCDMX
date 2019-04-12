@@ -108,3 +108,5 @@ en:
         authorizations:
           new:
             mobile_phone_number: Cellphone number, starting with country code
+          create:
+            error: Invalid phone number. Make sure you include your country code and the 10 digits of your phone.
