@@ -14,4 +14,3 @@
 //= require activestorage
 //= require_tree .
 //= require decidim
-console.log('app');
