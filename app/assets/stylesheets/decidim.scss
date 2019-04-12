@@ -585,6 +585,14 @@ h5 {
     padding: 1rem;
   }
 
+  &__a {
+    background: #00b140;;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    padding: 1rem;
+  }
+
   &.disabled {
     cursor: not-allowed;
     filter: grayscale(100%);
