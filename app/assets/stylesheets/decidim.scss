@@ -532,6 +532,10 @@ h5 {
 .index_right_proposals {
   position: absolute;
   right: 0;
+  display: block;
+  @media (max-width: 639px) {
+    display: none;
+  }
 }
 
 .proposal_content_left {
