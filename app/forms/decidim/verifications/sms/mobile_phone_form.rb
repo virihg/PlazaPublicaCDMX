@@ -41,7 +41,11 @@ module Decidim
         def verification_code
           return unless sms_gateway
           return @verification_code if defined?(@verification_code)
-          user.update(mobile_phone_number: mobile_phone_number) 
+          if mobile_phone_number.length > 11 && /^[0-9]*$/
+            user.update(mobile_phone_number: mobile_phone_number)
+          else
+            return
+          end
           return unless sms_gateway.new(mobile_phone_number, generated_code).deliver_code
           @verification_code = generated_code
         end
