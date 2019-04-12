@@ -725,6 +725,13 @@ li a:focus {
 
 @media only screen and (max-width: 636px) {
   #menu-indice-responsivo{
-    display: block;
+    display: inline-block;
+    text-align: center;
+    width: 100%;
   }
+
 }
+
+/* demo styles */
+body { margin-top: 3em; background: #eee; color: #555; font-family: "Open Sans", "Segoe UI", Helvetica, Arial, sans-serif; }
+p, p a { font-size: 12px;text-align: center; color: #888; }
