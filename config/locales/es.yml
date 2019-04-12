@@ -60,7 +60,7 @@ es:
       sms:
         authorizations:
           new:
-            mobile_phone_number: Número de celular
+            mobile_phone_number: Número de celular, comenzando con el código de país (ej. 525599999999)
     export_mailer:
       data_portability_export:
         click_button: Hola %{name}. <br/> Gracias por tu solicitud para obtener el archivo de tus datos en Plaza Pública. Puedes descargarlo aquí.
@@ -93,6 +93,6 @@ es:
           email_intro: '¡Has alcanzado el nivel %{current_level} en la insignia "<a href="%{resource_url}">%{badge_name}</a>" de Plaza Pública!'
           email_outro: Has recibido esta notificación porque has generado actividad en Plaza Pública.
           email_subject: '¡Has conseguido el nivel %{current_level} en la insignia %{badge_name} de Plaza Pública!'
-          notification_title: '¡Has alcanzado el nivel %{current_level} en la insignia <a href="%{resource_path}">%{badge_name}</a> de Plaza Pública!' 
+          notification_title: '¡Has alcanzado el nivel %{current_level} en la insignia <a href="%{resource_path}">%{badge_name}</a> de Plaza Pública!'
     welcome_notification:
       default_body: <p>Hola {{name}}, ¡Te damos la bienvenida a Plaza Pública! La plataforma de participación digital de la Ciudad de México donde la ciudadanía puede proponer, debatir, votar y decidir proyectos y disposiciones que afectan su vida en la ciudad.<br>Para garantizar la mayor transparencia y seguridad en los procesos, verifica tu cuenta con tu número celular  <a href="{{https://plazapublica.cdmx.gob.mx/sms/}}">aquí</a></p><br>Opina en la consulta del Programa de Gobierno 2018-2014<a href="{{https://plazapublica.cdmx.gob.mx/processes/programa-de-gobierno-cdmx}}">aquí</a></p><br>.<p>Consulta el aviso de privacidad <a href="{{https://plazapublica.cdmx.gob.mx/pages/aviso-de-privacidad}}">aquí</a></p><br><p>Plaza Pública.</p>
