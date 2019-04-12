@@ -288,6 +288,9 @@ h5 {
     list-style: none;
     margin: 0;
     padding-left: 0;
+    @media (max-width: 485px) {
+      display: none;
+    }
 
     li {
       position: relative;
@@ -359,7 +362,7 @@ h5 {
   background-color: rgba(255, 255, 255, 0.9);
   border-radius: 10px;
   display: inline-flex;
-  margin-top: 3rem;
+  margin: 3rem 15px 0;
   padding: 1.5rem 2.75rem;
   text-align: left;
   @media (max-width: 767.98px) {
@@ -395,10 +398,6 @@ h5 {
         display: block;
       }
     }
-  }
-
-  &__btn-link {
-    color: #00843d;
   }
 
   &__btn {
@@ -558,4 +557,36 @@ h5 {
 
 .cc-badge img {
   height: 20px;
+}
+.card-deck {
+  margin-top: 3rem;
+}
+
+.card-plaza {
+  background-color: $white;
+  border-top: 5px solid #00b140;
+  padding: 2rem 1rem 1rem;
+
+  &__title {
+    font-size: 1.75rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+  }
+
+  &__excerpt {
+    margin-bottom: 2rem;
+  }
+
+  &__btn {
+    background: #00b140;;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    padding: 1rem;
+  }
+
+  &.disabled {
+    cursor: not-allowed;
+    filter: grayscale(100%);
+  }
 }
