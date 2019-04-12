@@ -544,5 +544,16 @@ h5 {
 }
 
 .mini-footer {
-  background-color: #262629;
+  background-color: #000000;
+  .row {
+    max-width: none;
+  }
+}
+
+.decidim-logo-min img {
+  height: 25px;
+}
+
+.cc-badge img {
+  height: 25px;
 }
