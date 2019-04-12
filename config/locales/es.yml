@@ -7,11 +7,31 @@ es:
         sms:
           authorizations:
             sms_message: Hola! Tu codigo de verificacion para Plaza Publica es
+    models:
+      decidim/proposals/endorsing_enabled_event: Unión a propuesta habilitada
+      decidim/proposals/proposal_endorsed_event: Propuesta unida
   activerecord:
     models:
       decidim/participatory_process:
         other: Procesos participativos
+      decidim/proposals/proposal_endorsement:
+        one: Me gusta
+        other: Me gusta
   decidim:
+    metrics:
+      endorsements:
+        description: Número de Me gusta a propuestas
+        object: me gusta
+        title: Me gusta
+    components:
+      proposals:
+        actions:
+          create: Crear
+          endorse: Unirse
+        settings:
+          step:
+            endorsements_blocked: Me gusta bloqueados
+            endorsements_enabled: Me gusta habilitados
     participatory_processes:
       admin:
         content_blocks:
@@ -68,6 +88,10 @@ es:
         click_button: Hola %{name}. <br/> Gracias por tu solicitud para obtener el archivo de tus datos en Plaza Pública. Puedes descargarlo aquí.
         download: Descargar
     proposals:
+      models:
+        proposal:
+          fields:
+            endorsements: Me gusta
       participatory_text_proposal:
         alternative_title: No hay textos participativos por el momento
         buttons:
@@ -84,7 +108,18 @@ es:
       proposals:
         endorsement_identities_cabin:
           endorse: Me gusta
+        show:
+          endorsements_list: Lista de me gusta
+      proposal_endorsements:
+        create:
+          error: Se ha producido un error al dar me gusta a la propuesta.
     events:
+      proposals:
+        endorsing_enabled:
+          email_intro: '¡Puedes unirte a propuestas en %{participatory_space_title}! Empieza a participar en esta página:'
+          email_outro: Recibiste esta notificación porque estás siguiendo %{participatory_space_title}. Puedes dejar de recibir notificaciones siguiendo el enlace anterior.
+          email_subject: La unión de propuestas ha comenzado para %{participatory_space_title}
+          notification_title: Ahora puedes empezar a <a href="%{resource_path}">unirte a propuestas</a> en <a href="%{participatory_space_url}">%{participatory_space_title}</a>
       gamification:
         badge_earned:
           email_intro: '¡Has recibido la insignia "%{badge_name}" (nivel %{current_level}) por tu participación en Plaza Pública!.<br>Conócela <a href="%{resource_url}">aquí</a>'
