@@ -4,6 +4,18 @@
   <div class="column medium-9">
     <h2 class="heading2"><%= render_participatory_text_title(@participatory_text) %></h2>
   </div>
+
+
+  <div id="menu-indice-responsivo">
+    <a href="#menu" id="toggle"><span></span></a>
+    <div id="menu-responsive">
+      <ul>
+        <%= render partial: "decidim/proposals/proposals/participatory_texts/view_index" %>
+      </ul>
+    </div>
+
+  </div>
+
   <div class="column medium-3 pull-right index_right_proposals">
     <%= render partial: "decidim/proposals/proposals/participatory_texts/view_index" %>
   </div>
@@ -13,3 +25,52 @@
     <%= cell("decidim/proposals/participatory_text_proposal", proposal, context: { current_user: current_user }) %>
   <% end %>
 </div>
+
+
+<script>
+    var theToggle = document.getElementById('toggle');
+
+    // based on Todd Motto functions
+    // https://toddmotto.com/labs/reusable-js/
+
+    // hasClass
+    function hasClass(elem, className) {
+        return new RegExp(' ' + className + ' ').test(' ' + elem.className + ' ');
+    }
+    // addClass
+    function addClass(elem, className) {
+        if (!hasClass(elem, className)) {
+            elem.className += ' ' + className;
+        }
+    }
+    // removeClass
+    function removeClass(elem, className) {
+        var newClass = ' ' + elem.className.replace( /[\t\r\n]/g, ' ') + ' ';
+        if (hasClass(elem, className)) {
+            while (newClass.indexOf(' ' + className + ' ') >= 0 ) {
+                newClass = newClass.replace(' ' + className + ' ', ' ');
+            }
+            elem.className = newClass.replace(/^\s+|\s+$/g, '');
+        }
+    }
+    // toggleClass
+    function toggleClass(elem, className) {
+        let menu_responsive = document.querySelector('#menu-responsive');
+        menu_responsive.classList.toggle('show-menu-responsive');
+
+        var newClass = ' ' + elem.className.replace( /[\t\r\n]/g, " " ) + ' ';
+        if (hasClass(elem, className)) {
+            while (newClass.indexOf(" " + className + " ") >= 0 ) {
+                newClass = newClass.replace( " " + className + " " , " " );
+            }
+            elem.className = newClass.replace(/^\s+|\s+$/g, '');
+        } else {
+            elem.className += ' ' + className;
+        }
+    }
+
+    theToggle.onclick = function() {
+        toggleClass(this, 'on');
+        return false;
+    }
+</script>
