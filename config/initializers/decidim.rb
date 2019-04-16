@@ -63,8 +63,14 @@ Decidim.configure do |config|
   #   end
   # end
   #
+  # Activate an SMS Gateway (see app/services/)
   config.sms_gateway_service = "SMSGatewayService"
 
+  # Change the maximum file size of an attachment.
+  config.maximum_attachment_size = 40.megabytes
+
+  # Change the default currency unit
+  config.currency_unit = "$"
 
   # Etherpad configuration
   #
