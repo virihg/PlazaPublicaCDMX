@@ -94,5 +94,9 @@ Decidim.content_blocks.register(:homepage, :past_processes) do |content_block|
   end
 end
 
+Decidim.find_resource_manifest('proposal').actions = ["endorse", "vote", "comment"]
+
+Decidim.find_component_manifest('proposals').actions = ["endorse", "vote", "create", "withdraw", "comment"]
+
 Rails.application.config.i18n.available_locales = Decidim.available_locales
 Rails.application.config.i18n.default_locale = Decidim.default_locale
