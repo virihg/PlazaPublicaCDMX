@@ -44,7 +44,7 @@ es:
       pages:
         home:
           highlighted_processes:
-            active_processes_explanation: Explore the current active processes. A process can have many different stages in which you can participate.
+            active_processes_explanation: Explora los procesos que están abiertos. Un proceso puede tener muchas etapas en las que puedes participar.
           past_processes:
             last_step: Último paso
             more_information: Más información
