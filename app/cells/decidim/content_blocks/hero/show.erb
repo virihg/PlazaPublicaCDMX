@@ -20,7 +20,7 @@
             <div class="card-plaza card-hover">
               <h2 class="card-plaza__title">Consultas</h2>
               <p class="card-plaza__excerpt">Vota en los temas puestos a consulta por parte del gobierno</p>
-              <a href="https://plazapublica.cdmx.gob.mx/processes/programa-de-gobierno-cdmx/f/1/" class="card-plaza__link stretched-link">Ir a consultas</a>
+              <%= link_to "Ir a consultas", "https://plazapublica.cdmx.gob.mx/processes/", class: "card-plaza__link stretched-link" %>
             </div>
           </div>
 
@@ -39,15 +39,6 @@
               <a href="#" class="card-plaza__link stretched-link">Ir a iniciativas</a>
             </div>
           </div>
-        </div>
-
-        <div class="media-plaza card-hover">
-          <div>
-              <h2 class="media-plaza__title">Programa de Gobierno 2019 - 2024</h2>
-              <p class="media-plaza__excerpt">Conoce y comenta a favor o en contra de las <span>acciones del Programa de Gobierno 2019-2024</span></p>
-              <a href="https://plazapublica.cdmx.gob.mx/processes/programa-de-gobierno-cdmx" class="btn media-plaza__btn stretched-link">Participar</a>
-          </div>
-          <%= image_tag "card-img.jpg", class: "media-plaza__image", alt: "edificios en la cdmx"  %>
         </div>
       </div>
     </div>
