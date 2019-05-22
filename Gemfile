@@ -4,6 +4,10 @@ source "https://rubygems.org"
 
 ruby RUBY_VERSION
 
+# specifying versions to avoid vulnerabilities
+gem "actionview", ">= 5.2.2.1"
+gem "railties", ">= 5.2.2.1"
+
 gem "decidim", "0.17.0"
 
 gem "bootsnap", "~> 1.3"
@@ -13,6 +17,7 @@ gem "uglifier", "~> 4.1"
 
 gem "faker", "~> 1.9"
 gem 'rake','12.3.1'
+
 
 gem "figaro"
 gem 'decidim-consultations', "0.17.0"
