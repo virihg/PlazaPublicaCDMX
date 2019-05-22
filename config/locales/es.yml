@@ -77,6 +77,10 @@ es:
         new:
           password_help: Deben ser al menos 10 caracteres alfanúmericos
           tos_agreement: Al registrarte aceptas los términos y condiciones de uso.
+          nickname_help: Tu alias (nickname) en %{organization}. No se permiten arrobas u otros caracteres especiales.
+      omniauth_registrations:
+        new:
+          nickname_help: Tu alias (nickname) en %{organization}. No se permiten arrobas u otros caracteres especiales.
     verifications:
       sms:
         authorizations:
