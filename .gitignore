@@ -68,3 +68,7 @@ yarn-debug.log*
 !/storage/.keep
 
 .idea/
+
+# VIM backs
+*.swp
+
