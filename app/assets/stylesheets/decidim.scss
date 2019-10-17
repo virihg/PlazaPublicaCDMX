@@ -130,13 +130,12 @@ $primary: $adipgreen;
   margin-left: -0.625rem;
 }
 
-@media only screen and (min-width: 800px){
-.btn-custom: width: 18rem;
+@media only screen and (min-width: 800px) {
+  .btn-custom { width: 18rem; }
 }
 
-@media only screen and (max-width: 799px){
-.btn-custom: width: 10rem;
-
+@media only screen and (max-width: 799px) {
+  .btn-custom { width: 10rem; }
 }
 
 
