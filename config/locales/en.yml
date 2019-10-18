@@ -16,13 +16,14 @@ en:
     metrics:
       endorsements:
         description: Number of likes to proposals
-        object: like
+        object: Like
         title: Like
     components:
       proposals:
         actions:
-          create: Crear
-          endorse: Unirse
+          create: Create
+          endorse: Endorse
+          comment: Comment
         settings:
           step:
             endorsements_blocked: Like blocked
@@ -45,13 +46,13 @@ en:
             participate: Participate
             past_processes: Past processes
             see_all_processes: See all processes
-    devise:      
+    devise:
       sessions:
         new:
           are_you_new?: New to the platform?
           register: Create one.
           sign_in_disabled: You can access with an external account
-          sign_up_disabled: Sign up is disabled, you can use an existing account to access      
+          sign_up_disabled: Sign up is disabled, you can use an existing account to access
       mailer:
         reset_password_instructions:
           action: Change my password
@@ -73,12 +74,16 @@ en:
           instruction: To change your password, do click here.
           instruction_2: If you didn't request this, please ignore this email.
           instruction_3: Your password won't change until you access the link above and create a new one.
-          subject: Reset password instructions  
+          subject: Reset password instructions
       registrations:
         signed_up: Please check your email to activate your account in Plaza Pública.
         new:
           password_help: Must been at least 10 alfanumeric characters
           tos_agreement: By signing up you agree to the terms and conditions of use.
+          nickname_help: Your alias (nickname) in %{organization}. You cannot use the @ symbol or other special characters.
+      omniauth_registrations:
+        new:
+          nickname_help: Your alias (nickname) in %{organization}. You cannot use the @ symbol or other special characters.
       sessions:
         new:
           are_you_new?: Don't have an account in the platform yet?
@@ -89,7 +94,7 @@ en:
       data_portability_export:
         click_button: Hi %{name}. <br/> Thank you for your request to obtain the file of your data in Plaza Pública. You can download the file here.
         download: Download
-    proposals:     
+    proposals:
       models:
         proposal:
           fields:
@@ -110,7 +115,7 @@ en:
       proposals:
         endorsement_identities_cabin:
           endorse: Like
-    events:     
+    events:
       gamification:
         badge_earned:
           email_intro: 'You have obtained the badge "<a href="%{resource_url}">%{badge_name}</a>" (nivel %{current_level}) for your participation in Plaza Pública!'

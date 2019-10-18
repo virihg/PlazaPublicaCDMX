@@ -28,6 +28,7 @@ es:
         actions:
           create: Crear
           endorse: Unirse
+          comment: Comentar
         settings:
           step:
             endorsements_blocked: Me gusta bloqueados
@@ -43,7 +44,7 @@ es:
       pages:
         home:
           highlighted_processes:
-            active_processes_explanation: Explore the current active processes. A process can have many different stages in which you can participate.
+            active_processes_explanation: Explora los procesos que están abiertos. Un proceso puede tener muchas etapas en las que puedes participar.
           past_processes:
             last_step: Último paso
             more_information: Más información
@@ -76,6 +77,10 @@ es:
         new:
           password_help: Deben ser al menos 10 caracteres alfanúmericos
           tos_agreement: Al registrarte aceptas los términos y condiciones de uso.
+          nickname_help: Tu alias (nickname) en %{organization}. No se permiten arrobas u otros caracteres especiales.
+      omniauth_registrations:
+        new:
+          nickname_help: Tu alias (nickname) en %{organization}. No se permiten arrobas u otros caracteres especiales.
     verifications:
       sms:
         authorizations:

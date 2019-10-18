@@ -130,6 +130,14 @@ $primary: $adipgreen;
   margin-left: -0.625rem;
 }
 
+@media only screen and (min-width: 800px) {
+  .btn-custom { width: 18rem; }
+}
+
+@media only screen and (max-width: 799px) {
+  .btn-custom { width: 10rem; }
+}
+
 
 .col, .cole-1, .cole-10, .cole-11, .cole-12, .cole-2, .cole-3, .cole-4, .cole-5, .cole-6, .cole-7, .cole-8, .cole-9, .cole-auto, .cole-lg, .cole-lg-1, .cole-lg-10, .cole-lg-11, .cole-lg-12, .cole-lg-2, .cole-lg-3, .cole-lg-4, .cole-lg-5, .cole-lg-6, .cole-lg-7, .cole-lg-8, .cole-lg-9, .cole-lg-auto, .cole-md, .cole-md-1, .cole-md-10, .cole-md-11, .cole-md-12, .cole-md-2, .cole-md-3, .cole-md-4, .cole-md-5, .cole-md-6, .cole-md-7, .cole-md-8, .cole-md-9, .cole-md-auto, .cole-sm, .cole-sm-1, .cole-sm-10, .cole-sm-11, .cole-sm-12, .cole-sm-2, .cole-sm-3, .cole-sm-4, .cole-sm-5, .cole-sm-6, .cole-sm-7, .cole-sm-8, .cole-sm-9, .cole-sm-auto, .cole-xl, .cole-xl-1, .cole-xl-10, .cole-xl-11, .cole-xl-12, .cole-xl-2, .cole-xl-3, .cole-xl-4, .cole-xl-5, .cole-xl-6, .cole-xl-7, .cole-xl-8, .cole-xl-9, .cole-xl-auto {
     position: relative;

@@ -63,8 +63,14 @@ Decidim.configure do |config|
   #   end
   # end
   #
+  # Activate an SMS Gateway (see app/services/)
   config.sms_gateway_service = "SMSGatewayService"
 
+  # Change the maximum file size of an attachment.
+  config.maximum_attachment_size = 40.megabytes
+
+  # Change the default currency unit
+  config.currency_unit = "$"
 
   # Etherpad configuration
   #
@@ -87,6 +93,10 @@ Decidim.content_blocks.register(:homepage, :past_processes) do |content_block|
     settings.attribute :max_results, type: :integer, default: 4
   end
 end
+
+Decidim.find_resource_manifest('proposal').actions = ["endorse", "vote", "comment"]
+
+Decidim.find_component_manifest('proposals').actions = ["endorse", "vote", "create", "withdraw", "comment"]
 
 Rails.application.config.i18n.available_locales = Decidim.available_locales
 Rails.application.config.i18n.default_locale = Decidim.default_locale
