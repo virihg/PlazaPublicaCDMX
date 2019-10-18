@@ -1,4 +1,4 @@
-console.log('hey nori');
+console.log('hey nori 2');
 
 // jQuery(document).ready(function($){
 //     $cf = $('#mobile_phone_mobile_phone_number');
