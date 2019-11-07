@@ -37,7 +37,16 @@ end
             <li class="is-dropdown-submenu-parent">
               <a href="#">Menú</a>
               <ul class="menu is-dropdown-submenu js-append usermenu-off-canvas">
-                <%= render partial: "layouts/decidim/language_chooser" %>
+                <ul class="dropdown menu" data-dropdown-menu>
+                  <li class="is-dropdown-submenu-parent" id="dropdown-pp">
+                    <%= link_to t("name", scope: "locale") %>
+                    <ul class="menu is-dropdown-submenu">
+                      <% (available_locales - [I18n.locale.to_s]).each do |locale| %>
+                        <li><%= link_to locale_name(locale), decidim.locale_path(locale: locale), method: :post %></li>
+                      <% end %>
+                    </ul>
+                  </li>
+                </ul>
                 <% if current_user %>
                   <li>
                     <%= link_to 'Notificaciones', decidim.notifications_path %>
