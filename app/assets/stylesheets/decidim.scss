@@ -25,9 +25,6 @@ $primary: $adipgreen;
   color: $adipgray !important;
 }
 
-.top-bar-plaza-publica {
-  background-color: #fff !important;
-}
 .logo-wrapper span {
   color: $adipgray !important;
 }
@@ -79,6 +76,8 @@ $primary: $adipgreen;
   display: table;
 }
 
+.menu { z-index: 99; }
+.container { max-width: 100%; }
 .rowo {
   display: -ms-flexbox;
   display: flex;
@@ -136,6 +135,17 @@ $primary: $adipgreen;
 
 @media only screen and (max-width: 799px) {
   .btn-custom { width: 10rem; }
+}
+
+@media only screen and (max-width: 599px) {
+  #show-for-small {
+  //   align-items: center;
+    display: block !important;
+  //   height: 100%;
+  //   list-style: none;
+  //   margin: 0;
+  //   padding-left: 0;
+  }
 }
 
 
@@ -269,6 +279,7 @@ h5 {
   justify-content: space-between;
   padding: 0.7rem 1rem;
   position: relative;
+  flex-wrap: wrap;
 
   &::before,
   &::after {
@@ -290,13 +301,13 @@ h5 {
   }
 
   &__nav {
-    align-items: center;
+    align-items: right;
     display: flex;
     height: 100%;
     list-style: none;
     margin: 0;
     padding-left: 0;
-    @media (max-width: 485px) {
+    @media (max-width: 487px) {
       display: none;
     }
 
@@ -349,6 +360,18 @@ h5 {
         border-color: #28a231 transparent transparent;
       }
     }
+  }
+}
+
+@media (max-width: 486px) {
+  .show-for-small {
+    display: block !important;
+  }
+}
+
+@media (min-width: 487px) {
+  .show-for-small {
+    display: none !important;
   }
 }
 
