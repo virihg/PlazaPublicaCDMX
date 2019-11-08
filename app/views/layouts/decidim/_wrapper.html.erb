@@ -39,6 +39,7 @@ end
           <%= render partial: "layouts/decidim/logo", locals: { organization: current_organization } %>
           <nav role="navigation">
             <ul class="header-plaza__nav">
+              <%= link_to "Aviso de privacidad", asset_path("Avisos_Privacidad_Plaza.pdf", skip_pipeline: true) %>
               <%= render partial: "layouts/decidim/language_chooser" %>
                 <% if current_user %>
                   <div class="topbar__dropmenu topbar__user__logged">
