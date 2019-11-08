@@ -76,6 +76,8 @@ $primary: $adipgreen;
   display: table;
 }
 
+.menu { z-index: 99; }
+
 .rowo {
   display: -ms-flexbox;
   display: flex;
