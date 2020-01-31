@@ -4,43 +4,37 @@ source "https://rubygems.org"
 
 ruby RUBY_VERSION
 
-# specifying versions to avoid vulnerabilities
-gem "actionview", ">= 5.2.2.1"
-gem "railties", ">= 5.2.2.1"
+gem "rails", "~> 5.2.3"
 
-gem "decidim", "0.17.0"
-
-gem "bootsnap", "~> 1.3"
-
-gem "puma", "~> 3.0"
+gem "decidim"
+gem "bootsnap", "~> 1.4"
+gem "puma", "~> 3.12.2"
 gem "uglifier", "~> 4.1"
-
 gem "faker", "~> 1.9"
-gem 'rake','12.3.1'
-
 
 gem "figaro"
-gem 'decidim-consultations', "0.17.0"
-gem 'decidim-initiatives', "0.17.0"
-gem 'decidim-api', "0.17.0"
-gem 'delayed_job_active_record'
-gem 'whenever', require: false
-gem 'wicked_pdf'
-gem 'wkhtmltopdf-binary'
-gem 'charlock_holmes', '0.7.6'
+gem "decidim-consultations"
+gem "decidim-initiatives"
+gem "decidim-api"
+gem "decidim-conferences"
+gem "delayed_job_active_record"
+gem "whenever", require: false
+gem "wicked_pdf"
+gem "wkhtmltopdf-binary"
+gem "charlock_holmes"
 
 group :development, :test do
   gem "byebug", "~> 10.0", platform: :mri
 
-  gem "decidim-dev", "0.17.0"
+  gem "decidim-dev"
 end
 
 group :development do
-  gem "letter_opener_web", "~> 1.3"
-  gem "listen", "~> 3.1"
-  gem "spring", "~> 2.0"
-  gem "spring-watcher-listen", "~> 2.0"
-  gem "web-console", "~> 3.5"
+  gem "letter_opener_web"
+  gem "listen"
+  gem "spring"
+  gem "spring-watcher-listen"
+  gem "web-console"
 end
 
 group :production do
